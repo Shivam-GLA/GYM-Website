@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Fitness</title>
+</head>
+<link rel="stylesheet" href="fonts.googleapis.com/css2?family=Barriecito&family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Fira+Sans:wght@800&family=Lora&family=Modak&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap">
+    <style>
+        body{
+            font-family:'Fira',cursive;
+            color:white;
+            margin:0px;
+            padding:0px;
+            background: url("img/bg.jpg");
+        }
+        .left{
+            /* border:2px solid red; */
+            position:absolute;
+            left:60px;
+            top:20px;
+            display: inline-block;
+        }
+        .left img{
+            width:136px;
+            /* filter:invert(100%); */
+        }
+        .left div{
+            line-height: 19px;
+            font-size:26px;
+            text-align: center;
+        }
+        .mid{
+            /* border:2px solid green; */
+            display:block;
+            width:45%;
+            margin:29px auto;
+        }
+        .navbar{
+            display:inline-block;
+            padding:0px 0px;
+        }
+        .navbar li{
+            display:inline-block;
+            font-size: 22px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding:34px 18px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline;
+            color:grey;
+        }
+        .right{
+            /* border:2px solid yellow; */
+            position:absolute;
+            right:34px;
+            top:43px;
+            display: inline-block;
+        }
+        .btn{
+            margin:0px 9px;
+            background-color: black;
+            color:white;
+            padding:4px 14px;
+            border:2px solid grey;
+            border-radius: 10px;
+            font-size:17px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color:rgb(31,30,30);
+        }
+        .container{
+            border:2px solid white;
+            position:absolute;
+            right:85px;
+            top:100px;
+            width:33%;
+            margin:61px 69px;
+            border-radius:28px;
+            }
+            .form-group input{
+                text-align: center;
+                display:block;
+                width:97%;
+                margin:11px auto;
+                padding:1px;
+                border:2px solid black;
+                border-radius: 8px;
+                font-size:18px;
+            }
+            .container h1{
+                text-align: center;
+                padding:0px 28px;
+                font-size: 30px;
+            }
+            .container button{
+                display:block;
+                width:74%;
+                margin:20px auto;
+            }
+    </style>
+<body>
+   <header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+     <img src="img/logo.png" alt="">
+     <div>Shivam</div>
+    </div>
+    <!-- Mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <!-- Right box for buttons -->
+    <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+    </div>
+   </header> 
+   <div class="container">
+    <h1>Join the best GYM of Mathura now</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone number">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
